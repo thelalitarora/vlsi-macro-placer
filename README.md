@@ -46,14 +46,13 @@ cd vlsi-macro-placer
   M1 @ (432.2, 718.6) 
   M2 @ (100.0, 100.0) ... 
   Total HPWL: 1347.92 
-  ``` 
+  ``` </code></pre>
   A matplotlib-based plot will display: 
   - **Die boundary** in black 
   - **Macros** in blue (movable) and red (fixed) 
   - **Ports** as green dots with labels 
   - **Blockage areas** in gray 
   - **Net connections** as dashed cyan lines 
-</code></pre>
   
 ## 🧠 Algorithm Notes
   - Starts with legal random placement avoiding blockages and die violations 
