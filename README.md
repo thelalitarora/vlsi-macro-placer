@@ -4,13 +4,13 @@ This project implements a fast and scalable Python-based macro placement engine 
 
 ## 🔍 Features
 
-- ✅ Die area defined as rectilinear polygon
-- ✅ Macro placement with fixed and movable options
-- ✅ Weighted netlist (macro ↔ macro, macro ↔ port)
-- ✅ Blockage-aware placement
-- ✅ Force-directed heuristic with repulsion to avoid overlaps
-- ✅ Visualization of final placement and net connections
-- ✅ JSON-based input format for portability
+✅ Die area defined as rectilinear polygon
+✅ Macro placement with fixed and movable options
+✅ Weighted netlist (macro ↔ macro, macro ↔ port)
+✅ Blockage-aware placement
+✅ Force-directed heuristic with repulsion to avoid overlaps
+✅ Visualization of final placement and net connections
+✅ JSON-based input format for portability
 
 ## 🚀 Getting Started
 
@@ -45,29 +45,31 @@ cd vlsi-macro-placer
   Final Macro Placements: 
   M1 @ (432.2, 718.6) 
   M2 @ (100.0, 100.0) ... 
-  Total HPWL: 1347.92 ``` 
+  Total HPWL: 1347.92 
+  ``` 
+  
   A matplotlib-based plot will display: 
   - **Die boundary** in black 
   - **Macros** in blue (movable) and red (fixed) 
   - **Ports** as green dots with labels 
   - **Blockage areas** in gray 
   - **Net connections** as dashed cyan lines 
-</code></pre>
 
 ## 🧠 Algorithm Notes
-<pre><code>
   - Starts with legal random placement avoiding blockages and die violations 
   - Uses force-directed repulsion to reduce macro overlaps 
   - Penalizes collisions with blockages 
   - Evaluates HPWL cost function on each iteration 
   - Ports are treated as fixed connection points 
-  - Uses R-tree spatial indexing for fast overlap queries </code></pre>
+  - Uses R-tree spatial indexing for fast overlap queries
 
 ## 🧩 Future Work
-<pre><code>
   - Add macro clustering and hierarchy awareness 
   - Integrate timing-aware placement and slack analysis 
   - Add export to DEF/GDSII formats 
   - Congestion and density-aware placement cost models 
   - Parallelization of placement loops for large-scale designs 
-  - GUI-based interactive placement tweaking </code></pre>
+  - GUI-based interactive placement tweaking
+
+## 🤝 Contributions
+Feel free to fork and contribute! Pull requests, improvements, and suggestions are always welcome.
