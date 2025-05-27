@@ -4,13 +4,13 @@ This project implements a fast and scalable Python-based macro placement engine 
 
 ## 🔍 Features
 
-✅ Die area defined as rectilinear polygon
-✅ Macro placement with fixed and movable options
-✅ Weighted netlist (macro ↔ macro, macro ↔ port)
-✅ Blockage-aware placement
-✅ Force-directed heuristic with repulsion to avoid overlaps
-✅ Visualization of final placement and net connections
-✅ JSON-based input format for portability
+- ✅ Die area defined as rectilinear polygon
+- ✅ Macro placement with fixed and movable options
+- ✅ Weighted netlist (macro ↔ macro, macro ↔ port)
+- ✅ Blockage-aware placement
+- ✅ Force-directed heuristic with repulsion to avoid overlaps
+- ✅ Visualization of final placement and net connections
+- ✅ JSON-based input format for portability
 
 ## 🚀 Getting Started
 
@@ -47,14 +47,14 @@ cd vlsi-macro-placer
   M2 @ (100.0, 100.0) ... 
   Total HPWL: 1347.92 
   ``` 
-  
   A matplotlib-based plot will display: 
   - **Die boundary** in black 
   - **Macros** in blue (movable) and red (fixed) 
   - **Ports** as green dots with labels 
   - **Blockage areas** in gray 
   - **Net connections** as dashed cyan lines 
-
+</code></pre>
+  
 ## 🧠 Algorithm Notes
   - Starts with legal random placement avoiding blockages and die violations 
   - Uses force-directed repulsion to reduce macro overlaps 
